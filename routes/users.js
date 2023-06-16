@@ -17,6 +17,7 @@ router.get('/search-user-by-Id/:id([0-9]{4})', function(req, res, next) {
 router.get('/search-user-by-name/:name([a-zA-Z]{7})', function(req, res, next) {
   res.send('The user name is'+ req.params.name);
 });
+
  router.get('*',(req,res)=>{
    var resObj={
     statusCode: 404,
