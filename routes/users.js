@@ -19,10 +19,12 @@ router.get('/search-user-by-name/:name([a-zA-Z]{7})', function(req, res, next) {
 });
 
  router.get('*',(req,res)=>{
-   var resObj={
+   
+  var resObj={
     statusCode: 404,
     statusMsg:"URL not found"
    }
+
    res.send(resObj);
  })
 module.exports = router;
